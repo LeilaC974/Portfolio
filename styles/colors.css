@@ -1,0 +1,6 @@
+/* Palette */
+:root {
+    --primary: hsla(155, 26%, 13%, 1);
+    --secondary: hsla(156, 89%, 21%, 1);
+    --contrast: hsla(0, 0%, 100%, 1);
+}

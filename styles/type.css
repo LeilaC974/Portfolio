@@ -1,0 +1,30 @@
+/* Définit la typo Forum par défaut */
+body {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary);
+}
+
+/* Définit quels éléments utilisent 'The Seasons' */
+h1, h2, h3, h4, h5, h6,
+label, a.cta, button.cta {
+  font-family: "the-seasons", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--primary);
+}
+
+/* Règles par niveau de titrage.
+/* Chaque règle s'appliquera à un élément,
+/* ainsi qu'à une class du même nom. */
+h1, .h1 {
+  font-size: 6rem; /* 96px */
+  line-height: 0.8;
+}
+h2, .h2 {
+  font-size: 2.25rem; /* 36px */
+}
+h3, .h3 {
+  font-size: 1.5rem; /* 24px */
+}

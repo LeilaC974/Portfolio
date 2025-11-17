@@ -1,0 +1,35 @@
+/* @Credit https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/* Standard resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+button {
+  background: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improvements to text */
+body {
+  line-height: 1.5; /* Add accessible line-height */
+  -webkit-font-smoothing: antialiased; /* Improves text rendering */
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}

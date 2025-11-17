@@ -1,0 +1,32 @@
+/* Ordre des priorités des layers */
+@layer reset, base, overrides;
+
+/* Réinitialisation */
+@import url(reset.css) layer(reset);
+
+
+/* Atomes */
+@import url(type.css) layer(base); /* Typographie */
+@import url(colors.css) layer(base); /* Couleurs */
+
+/* Calls to action */
+a.cta, button.cta {
+    display: inline-block;
+    text-decoration: none;
+
+    font-size: 1.5rem; /* 24px */
+    border-radius: 2em;
+    padding-block: 0.5em;
+    padding-inline: 1.5em;
+
+    color: var(--contrast);
+    background-color: var(--secondary);
+
+    &:hover {
+        background-color: var(--primary);
+    }
+}
+
+
+/* Molécules */
+@import url(form.css) layer(base); /* Formulaire */
