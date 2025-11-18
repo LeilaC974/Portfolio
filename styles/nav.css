@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin-bottom: 2rem;
+
+    @media screen and (width < 1024px) {
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+        line-height: 1;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--secondary);
+        }
+    }
+}

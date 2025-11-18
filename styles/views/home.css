@@ -1,0 +1,137 @@
+@layer page {
+
+body {
+    container: body / size;
+}
+main {
+    position: relative;
+    min-height: calc(100cqh - 2rem - 1.5rem);
+}
+
+.boite {
+    width: min(100%, 400px);
+    position: relative;
+    border: 2px solid var(--primary);
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    aspect-ratio: 2 / 3;
+    text-align: center;
+
+    h1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        row-gap: 2rem;
+
+        span i {
+            display: block;
+        }
+        span:first-of-type {
+            color: var(--secondary);
+        }
+    }
+
+    .gellule {
+        border: inherit;
+        border-radius: 50vw;
+        position: absolute;
+        inset: -2px;
+    }
+
+    /* Desktop */
+    @media screen and (width >= 1024px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        margin-bottom: unset;
+
+        h1 {
+            row-gap: 6rem;
+        }
+    }
+}
+
+p {
+    font-weight: bold;
+}
+@media screen and (width >= 1024px) {
+    .texte {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+    }
+    p {
+        font-size: 1.125rem;
+    }
+}
+@media screen and (width < 1024px) {
+    p {
+        text-align: center;
+        max-width: clamp(240px, 50%, 440px);
+        margin-inline: auto;
+    }
+}
+
+.cercle1,
+.cercle2 {
+    --cercle-translation: 40%;
+    --cercle-size: 340px;
+    position: absolute;
+    width: var(--cercle-size);
+    aspect-ratio: 1;
+    border-radius: var(--cercle-size);
+    border: 2px solid var(--primary);
+    inset-inline-start: calc(60% - (var(--cercle-size) * 2 / 1.2));
+    inset-block-start: calc(300px - (var(--cercle-size) / 2)); /* 300px est la hauteur de '.boite' divisée en 2 */
+}
+.cercle1 {
+    translate: var(--cercle-translation);
+}
+.cercle2 {
+    translate: calc(-1 * var(--cercle-translation)); /* Conversion en valeur négative */
+}
+
+.baton {
+    position: absolute;
+    width: calc(100% - 200px); /* '200px' correspond à la largeur max. de '.boite' */
+    height: 2px;
+    background-color: var(--primary);
+    inset-inline-start: 0;
+    inset-block-start: 299px; /* 300px est la hauteur de '.boite' divisée en 2, -1px pcq '.baton' est haut de 2px */
+}
+
+@media screen and (width < 1298px) {
+    [class*='cercle'] {
+        --cercle-size: 240px;
+    }
+}
+@media screen and (width < 1024px) {
+    .cercle, .baton,
+    [class*='cercle'], [class*='fleche'] {
+        display: none;
+    }
+}
+
+.fleche1,
+.fleche2 {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--primary);
+}
+.fleche1 {
+    width: 50cqw;
+}
+.fleche2 {
+    width: 15cqw;
+    transform: translateX(-12.5cqw);
+    rotate: 90deg;
+    left: -7.5cqw;
+}
+
+}

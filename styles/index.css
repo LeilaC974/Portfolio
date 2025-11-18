@@ -1,32 +1,23 @@
 /* Ordre des priorités des layers */
-@layer reset, base, overrides;
+@layer reset, base, page, overrides;
 
 /* Réinitialisation */
 @import url(reset.css) layer(reset);
-
 
 /* Atomes */
 @import url(type.css) layer(base); /* Typographie */
 @import url(colors.css) layer(base); /* Couleurs */
 
-/* Calls to action */
-a.cta, button.cta {
-    display: inline-block;
-    text-decoration: none;
+/* Molécules */
+@import url(nav.css) layer(base); /* Navigation */
+@import url(form.css) layer(base); /* Formulaire */
 
-    font-size: 1.5rem; /* 24px */
-    border-radius: 2em;
-    padding-block: 0.5em;
-    padding-inline: 1.5em;
-
-    color: var(--contrast);
-    background-color: var(--secondary);
-
-    &:hover {
-        background-color: var(--primary);
+/* Basic Layout */
+@layer base {
+    body {
+        max-width: 1768px;
+        min-height: 100cqh;
+        margin-inline: auto;
+        padding: clamp(16px, 5vw, 6rem);
     }
 }
-
-
-/* Molécules */
-@import url(form.css) layer(base); /* Formulaire */
