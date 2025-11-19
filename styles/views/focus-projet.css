@@ -5,6 +5,9 @@ main {
         h1 {
             margin-bottom:20px;
         }
+        h2 {
+            margin-bottom:10px;
+        }
 
         img {
             margin-bottom: 10px;
@@ -14,6 +17,12 @@ main {
         }
         img.rounded-corner{
             border-radius: 20px;
+        }
+
+        .redaction-website-showcase {
+            img {
+                margin:0;
+            }
         }
     }
 
