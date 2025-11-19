@@ -11,6 +11,7 @@ main {
 
         img {
             margin-bottom: 10px;
+            width:100%;
         }
         img.bordered {
             border:1px solid var(--secondary);
@@ -19,10 +20,15 @@ main {
             border-radius: 20px;
         }
 
-        .redaction-website-showcase {
+        .redaction-website-showcase,
+        .odysseus-arbo {
             img {
                 margin:0;
             }
+        }
+
+        .odysseus-arbo {
+            border: 1px solid var(--secondary);
         }
     }
 
