@@ -1,0 +1,23 @@
+main {
+
+    section {
+
+        h1 {
+            margin-bottom:20px;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+        img.bordered {
+            border:1px solid var(--secondary);
+        }
+        img.rounded-corner{
+            border-radius: 20px;
+        }
+    }
+
+    .box{
+        margin-bottom: 30px;
+    }
+}
