@@ -1,35 +1,45 @@
 main{
-    display:flex;
+    width:100%;
+
+    .portrait {
+        width:100%;
+
+        .moi {
+            width:100%;
+
+            .maphoto {
+                width:100%;
+                border-radius: 225px 225px 0px 0px;
+            }
+        }
+
+        .cta-cv {
+            margin-top: 15px;
+            display:flex;
+            justify-content:center;
+        }
+    }
+
+    .outils{
+        width:100%;
+        margin-top: 20px;
+
+        .app-icons {
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+
+            .icone{
+                max-width: 60px;
+                max-height: 60px;
+                padding:5px;
+            }
+        }
+    }
 }
 
-section{
-    flex-wrap: wrap;
-    display: flex;
-    margin: 5%;
-}
- 
-.portrait{
-    flex-wrap: wrap;
-    max-width: 60%;
-}
 
-.maphoto {
-    max-width: calc(60%/2);
-    max-height: 1300px;
-    border-radius: 225px 225px 0px 0px;
-}
 
-.outils{
-    background-color: blueviolet;
-    display: flex;
-    max-width: 30%;
-    padding: 45px;
-}
 
-.icone{
-    max-width: 60px;
-    max-height: 60px;
-    flex-wrap: nowrap;
-}
 
 
