@@ -7,36 +7,38 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap">
     <link rel="stylesheet" href="https://use.typekit.net/olb3xqw.css">
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/views/projets.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/Portfolio/pages/about.html">À propos</a>
-            <a href="/Portfolio/pages/projet.html">Portfolio</a>
-            <a href="/Portfolio/pages/contact.html">Contact</a>
+            <a href="/pages/about.html">À propos</a>
+            <a href="/pages/projets.html">Portfolio</a>
+            <a href="/pages/contact.html">Contact</a>
         </nav>
     </header>
     <main>
-        <a href="">
-            <img src="../assets/logos/logo ouilive 500-09 1.png" alt="logo Ouilive">
-        </a>
-        <a href="">
-            <img src="../assets/logos/Logo Sapiens.svg" alt="logo Sapiens">
-        </a>
-        <a href="">
-            <img src="../assets/logos/Redaction 2019 logo.svg" alt="logo Redaction">
-        </a>
-        <a href="">
-            <img src="../assets/logos/Persona;.svg" alt="logo Persona">
-        </a>
-        <a href="">
-            <img src="../assets/logos/Logo Odysseus.svg" alt="logo Odysseus">
-        </a>
-        <a href="">
-            <img src="../assets/logos/Side projects.svg" alt="Logo Side projects">
-        </a>
-        <p>Sélectionne un projet !</p>
-        <div class="fleche2"></div>
+        <div class="box-arrow">
+            <p>Sélectionne un projet !</p>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <section class="all-projects">
+            <article class="single-projet">
+                <a href="/pages/focus-projet-sapiens.html">
+                    <img src="/assets/logos/Logo Sapiens.svg" alt="logo Sapiens">
+                </a>
+            </article>
+
+            <article class="single-projet">
+                <a href="/pages/focus-projet-redaction.html">
+                    <img src="/assets/logos/Redaction 2019 logo.svg" alt="logo Sapiens">
+                </a>
+            </article>
+        </section>
     </main>
 </body>
 </html>
