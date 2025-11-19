@@ -51,6 +51,10 @@ main {
                 align-items: center;
                 padding-top:50px;
             }
+
+            img.persona{
+                width:60%;
+            }
         }
     }
 }
